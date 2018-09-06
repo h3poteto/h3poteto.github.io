@@ -22,4 +22,4 @@ I'm a software engineer working in Japan.
 - [zsh-ec2ssh](https://github.com/h3poteto/zsh-ec2ssh)
 
 ## Contact
-https://mstdn.jp/@h3_poteto
+[https://mstdn.jp/@h3_poteto](https://mstdn.jp/@h3_poteto)
