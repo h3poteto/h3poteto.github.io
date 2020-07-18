@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { StyleReset } from "atomize"
 
 import Header from "./header"
+import Title from "./title"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -28,6 +29,7 @@ const Layout = ({ children }) => {
     <>
       <StyleReset />
       <Header siteTitle={data.site.siteMetadata.title} />
+      <Title />
       <div
         style={{
           margin: `0 auto`,

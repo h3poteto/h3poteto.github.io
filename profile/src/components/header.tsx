@@ -5,13 +5,12 @@ import { Div, Text } from "atomize"
 
 const Header = ({ siteTitle }) => (
   <Div
-    bg="success900"
+    bg="info900"
     d="flex"
     tag="header"
     justify="space-between"
     textColor="gray400"
     p={{ x: "10rem", y: "1rem" }}
-    m={{ b: "1rem" }}
   >
     <Div>
       <Link
