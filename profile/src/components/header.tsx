@@ -69,15 +69,17 @@ const Header = ({ siteTitle }) => (
           Talks
         </Text>
       </Link>
-      <Text
-        tag="h2"
-        textSize="subheader"
-        textColor="gray400"
-        m={{ x: "0.5rem", y: 0 }}
-        textWeight="200"
-      >
-        Skills
-      </Text>
+      <Link to="#skills" style={{ textDecoration: `none` }}>
+        <Text
+          tag="h2"
+          textSize="subheader"
+          textColor="gray400"
+          m={{ x: "0.5rem", y: 0 }}
+          textWeight="200"
+        >
+          Skills
+        </Text>
+      </Link>
     </Div>
   </Div>
 )

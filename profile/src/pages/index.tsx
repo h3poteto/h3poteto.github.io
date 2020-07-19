@@ -1,5 +1,6 @@
 import React from "react"
 import { Div, Text } from "atomize"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -20,7 +21,15 @@ const IndexPage = () => (
       </Text>
       <Div d="flex" flexWrap="wrap">
         <Div w="200px" m={{ x: { xs: "auto", sm: 0 }, y: 0 }}>
-          <Image />
+          <Img
+            sizes={Image({ filename: "icon.png" })}
+            style={{
+              width: 120,
+              borderRadius: 60,
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          />
         </Div>
         <Div m={{ x: { xs: "auto", sm: 0 }, y: 0 }} textAlign="left">
           <Text
@@ -112,17 +121,182 @@ const IndexPage = () => (
         Talks
       </Text>
       <Div d="flex" flexWrap="wrap" justify="space-between">
-        <Div w="40%">
+        <Div w={{ xs: "90%", sm: "40%", md: "40%" }}>
           <Slide id="aaf3dcc919ba4337a0e55011cf583f86" />
         </Div>
-        <Div w="40%">
+        <Div w={{ xs: "90%", sm: "40%", md: "40%" }}>
           <Slide id="3309256c58b243988c7d6c19d0b7a4ec" />
         </Div>
-        <Div w="40%">
+        <Div w={{ xs: "90%", sm: "40%", md: "40%" }}>
           <Slide id="8fa4a216b11e4677b151b1678631af44" />
         </Div>
-        <Div w="40%">
+        <Div w={{ xs: "90%", sm: "40%", md: "40%" }}>
           <Slide id="05d46634fa2f4b648b909e232bcf0f52" />
+        </Div>
+      </Div>
+    </Div>
+    <Div textAlign="center" id="skills">
+      <Text
+        tag="h3"
+        textSize="display1"
+        textColor="info700"
+        p={{ x: 0, y: "2rem" }}
+      >
+        Skills
+      </Text>
+      <Div
+        textAlign="left"
+        d="flex"
+        flexWrap="wrap"
+        justify="space-between"
+        align="center"
+      >
+        <Div
+          d="flex"
+          w={{ xs: "90%", sm: "40%", md: "40%" }}
+          align="center"
+          m={{ y: "1rem" }}
+        >
+          <Div w="100px" textAlign="center">
+            <Img
+              sizes={Image({ filename: "golang.png" })}
+              style={{ width: 90, marginLeft: "auto", marginRight: "auto" }}
+            />
+          </Div>
+          <Text
+            textSize="subheader"
+            textColor="black600"
+            textWeight="600"
+            p={{ l: "2rem" }}
+          >
+            Golang
+          </Text>
+        </Div>
+        <Div
+          d="flex"
+          w={{ xs: "90%", sm: "40%", md: "40%" }}
+          align="center"
+          m={{ y: "1rem" }}
+        >
+          <Div w="100px" textAlign="center">
+            <Img
+              sizes={Image({ filename: "ruby.png" })}
+              style={{ width: 50, marginLeft: "auto", marginRight: "auto" }}
+            />
+          </Div>
+          <Text
+            textSize="subheader"
+            textColor="black600"
+            textWeight="600"
+            p={{ l: "2rem" }}
+          >
+            Ruby / Rails
+          </Text>
+        </Div>
+        <Div
+          d="flex"
+          w={{ xs: "90%", sm: "40%", md: "40%" }}
+          align="center"
+          m={{ y: "1rem" }}
+        >
+          <Div w="100px" textAlign="center">
+            <Img
+              sizes={Image({ filename: "elixir.png" })}
+              style={{ width: 60, marginLeft: "auto", marginRight: "auto" }}
+            />
+          </Div>
+          <Text
+            textSize="subheader"
+            textColor="black600"
+            textWeight="600"
+            p={{ l: "2rem" }}
+          >
+            Elixir / Phoenix
+          </Text>
+        </Div>
+        <Div
+          d="flex"
+          w={{ xs: "90%", sm: "40%", md: "40%" }}
+          align="center"
+          m={{ y: "1rem" }}
+        >
+          <Div w="100px" textAlign="center">
+            <Img
+              sizes={Image({ filename: "python.png" })}
+              style={{ width: 50, marginLeft: "auto", marginRight: "auto" }}
+            />
+          </Div>
+          <Text
+            textSize="subheader"
+            textColor="black600"
+            textWeight="600"
+            p={{ l: "2rem" }}
+          >
+            Python / Django
+          </Text>
+        </Div>
+        <Div
+          d="flex"
+          w={{ xs: "90%", sm: "40%", md: "40%" }}
+          align="center"
+          m={{ y: "1rem" }}
+        >
+          <Div w="100px" textAlign="center">
+            <Img
+              sizes={Image({ filename: "terraform.png" })}
+              style={{ width: 60, marginLeft: "auto", marginRight: "auto" }}
+            />
+          </Div>
+          <Text
+            textSize="subheader"
+            textColor="black600"
+            textWeight="600"
+            p={{ l: "2rem" }}
+          >
+            AWS / terraform
+          </Text>
+        </Div>
+        <Div
+          d="flex"
+          w={{ xs: "90%", sm: "40%", md: "40%" }}
+          align="center"
+          m={{ y: "1rem" }}
+        >
+          <Div w="100px" textAlign="center">
+            <Img
+              sizes={Image({ filename: "kubernetes.png" })}
+              style={{ width: 50, marginLeft: "auto", marginRight: "auto" }}
+            />
+          </Div>
+          <Text
+            textSize="subheader"
+            textColor="black600"
+            textWeight="600"
+            p={{ l: "2rem" }}
+          >
+            Kubernetes
+          </Text>
+        </Div>
+        <Div
+          d="flex"
+          w={{ xs: "90%", sm: "40%", md: "40%" }}
+          align="center"
+          m={{ y: "1rem" }}
+        >
+          <Div w="100px" textAlign="center">
+            <Img
+              sizes={Image({ filename: "react.png" })}
+              style={{ width: 80, marginLeft: "auto", marginRight: "auto" }}
+            />
+          </Div>
+          <Text
+            textSize="subheader"
+            textColor="black600"
+            textWeight="600"
+            p={{ l: "2rem" }}
+          >
+            React.js / Vue.js
+          </Text>
         </Div>
       </Div>
     </Div>
