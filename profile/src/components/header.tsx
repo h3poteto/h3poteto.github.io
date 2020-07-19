@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Div, Text } from "atomize"
 
+import "./header.css"
+
 const Header = ({ siteTitle }) => (
   <Div
     bg="info900"
@@ -10,7 +12,7 @@ const Header = ({ siteTitle }) => (
     tag="header"
     justify="space-between"
     textColor="gray400"
-    p={{ x: "10rem", y: "1rem" }}
+    p={{ x: { xs: "1rem", sm: "2rem", md: "10rem" }, y: "1rem" }}
   >
     <Div>
       <Link
@@ -19,17 +21,18 @@ const Header = ({ siteTitle }) => (
           textDecoration: `none`,
         }}
       >
-        <Text tag="h1" textSize="title" textColor="gray400">
+        <Text tag="h1" textSize="title" textColor="gray400" textWeight="200">
           {siteTitle}
         </Text>
       </Link>
     </Div>
-    <Div d="flex" justify="flex-end">
+    <Div d="flex" justify="flex-end" className="menu">
       <Text
         tag="h2"
         textSize="subheader"
         textColor="gray400"
         m={{ x: "0.5rem", y: 0 }}
+        textWeight="200"
       >
         About Me
       </Text>
@@ -38,6 +41,7 @@ const Header = ({ siteTitle }) => (
         textSize="subheader"
         textColor="gray400"
         m={{ x: "0.5rem", y: 0 }}
+        textWeight="200"
       >
         Career
       </Text>
@@ -46,6 +50,7 @@ const Header = ({ siteTitle }) => (
         textSize="subheader"
         textColor="gray400"
         m={{ x: "0.5rem", y: 0 }}
+        textWeight="200"
       >
         OSS
       </Text>
@@ -54,6 +59,7 @@ const Header = ({ siteTitle }) => (
         textSize="subheader"
         textColor="gray400"
         m={{ x: "0.5rem", y: 0 }}
+        textWeight="200"
       >
         Talks
       </Text>
@@ -62,6 +68,7 @@ const Header = ({ siteTitle }) => (
         textSize="subheader"
         textColor="gray400"
         m={{ x: "0.5rem", y: 0 }}
+        textWeight="200"
       >
         Skills
       </Text>
