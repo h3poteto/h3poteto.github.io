@@ -45,6 +45,48 @@ const IndexPage = () => (
             @h3poteto
           </Text>
           <Text p={{ t: "0.5rem" }}>Software Engineer working in Tokyo.</Text>
+          <Div m={{ t: "1rem" }} d="flex" align="center">
+            <Div>
+              <Link to="https://github.com/h3poteto">
+                <Img
+                  sizes={Image({ filename: "github.png" })}
+                  style={{ width: 42 }}
+                />
+              </Link>
+            </Div>
+            <Div p={{ l: "12px" }}>
+              <Link to="https://pleroma.io/users/h3poteto">
+                <Img
+                  sizes={Image({ filename: "pleroma.png" })}
+                  style={{ width: 26 }}
+                />
+              </Link>
+            </Div>
+            <Div p={{ l: "12px" }}>
+              <Link to="https://fedibird.com/@h3poteto">
+                <Img
+                  sizes={Image({ filename: "mastodon.png" })}
+                  style={{ width: 42 }}
+                />
+              </Link>
+            </Div>
+            <Div p={{ l: "12px" }}>
+              <Link to="https://twitter.com/h3_poteto">
+                <Img
+                  sizes={Image({ filename: "twitter.png" })}
+                  style={{ width: 42, borderRadius: 24 }}
+                />
+              </Link>
+            </Div>
+            <Div p={{ l: "4px" }}>
+              <Link to="https://h3poteto.hatenablog.com/">
+                <Img
+                  sizes={Image({ filename: "hatena.png" })}
+                  style={{ width: 64 }}
+                />
+              </Link>
+            </Div>
+          </Div>
         </Div>
       </Div>
     </Div>
