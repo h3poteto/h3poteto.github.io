@@ -1,6 +1,7 @@
 import React from "react"
-import { Div, Text } from "atomize"
+import { Div, Text, Button } from "atomize"
 import Img from "gatsby-image"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -111,7 +112,63 @@ const IndexPage = () => (
         </ul>
       </Div>
     </Div>
-    <Div textAlign="center" id="talks">
+    <Div textAlign="center" id="oss">
+      <Text
+        tag="h3"
+        textSize="display1"
+        textColor="info700"
+        p={{ x: 0, y: "2rem" }}
+      >
+        OSS
+      </Text>
+      <Div d="flex" flexWrap="wrap" justify="space-between">
+        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
+          <a href="https://github.com/h3poteto/whalebird-desktop">
+            <img src="https://gh-card.dev/repos/h3poteto/whalebird-desktop.svg?fullname=" />
+          </a>
+        </Div>
+        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
+          <a href="https://github.com/h3poteto/megalodon">
+            <img src="https://gh-card.dev/repos/h3poteto/megalodon.svg?fullname=" />
+          </a>
+        </Div>
+        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
+          <a href="https://github.com/h3poteto/kube-job">
+            <img src="https://gh-card.dev/repos/h3poteto/kube-job.svg?fullname=" />
+          </a>
+        </Div>
+        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
+          <a href="https://github.com/h3poteto/ecs-goploy">
+            <img src="https://gh-card.dev/repos/h3poteto/ecs-goploy.svg?fullname=" />
+          </a>
+        </Div>
+        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
+          <a href="https://github.com/h3poteto/fluentd-sidecar-injector">
+            <img src="https://gh-card.dev/repos/h3poteto/fluentd-sidecar-injector.svg?fullname=" />
+          </a>
+        </Div>
+        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
+          <a href="https://github.com/h3poteto/electron-mock-ipc">
+            <img src="https://gh-card.dev/repos/h3poteto/electron-mock-ipc.svg?fullname=" />
+          </a>
+        </Div>
+      </Div>
+      <Link to="https://github.com/h3poteto">
+        <Button
+          h="2.5rem"
+          p={{ x: "4rem" }}
+          textSize="subheader"
+          textColor="gray200"
+          hoverTextColor="gray100"
+          bg="info800"
+          hoverBg="info900"
+          m={{ x: "auto", y: 0 }}
+        >
+          More
+        </Button>
+      </Link>
+    </Div>
+    <Div textAlign="center" id="talks" m={{ t: "3rem" }}>
       <Text
         tag="h3"
         textSize="display1"
@@ -120,22 +177,36 @@ const IndexPage = () => (
       >
         Talks
       </Text>
-      <Div d="flex" flexWrap="wrap" justify="space-between">
-        <Div w={{ xs: "90%", sm: "40%", md: "40%" }}>
+      <Div>
+        <Div w="80%" m={{ x: "auto", y: 0 }}>
           <Slide id="aaf3dcc919ba4337a0e55011cf583f86" />
         </Div>
-        <Div w={{ xs: "90%", sm: "40%", md: "40%" }}>
+        <Div w="80%" m={{ x: "auto", y: 0 }}>
           <Slide id="3309256c58b243988c7d6c19d0b7a4ec" />
         </Div>
-        <Div w={{ xs: "90%", sm: "40%", md: "40%" }}>
+        <Div w="80%" m={{ x: "auto", y: 0 }}>
           <Slide id="8fa4a216b11e4677b151b1678631af44" />
         </Div>
-        <Div w={{ xs: "90%", sm: "40%", md: "40%" }}>
+        <Div w="80%" m={{ x: "auto", y: 0 }}>
           <Slide id="05d46634fa2f4b648b909e232bcf0f52" />
         </Div>
       </Div>
+      <Link to="https://speakerdeck.com/h3poteto">
+        <Button
+          h="2.5rem"
+          p={{ x: "4rem" }}
+          textSize="subheader"
+          textColor="gray200"
+          hoverTextColor="gray100"
+          bg="info800"
+          hoverBg="info900"
+          m={{ x: "auto", y: 0 }}
+        >
+          More
+        </Button>
+      </Link>
     </Div>
-    <Div textAlign="center" id="skills">
+    <Div textAlign="center" id="skills" m={{ t: "3rem" }}>
       <Text
         tag="h3"
         textSize="display1"
