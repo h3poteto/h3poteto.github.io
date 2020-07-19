@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { StyleReset } from "atomize"
+import { StyleReset, Div } from "atomize"
 
 import Header from "./header"
 import Title from "./title"
@@ -38,12 +38,11 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+      <Div Tag="footer" p={{ y: "3rem" }} bg="gray200" textAlign="center">
+        © {new Date().getFullYear()},{` `}
+        <a href="https://pleroma.io/users/h3poteto">@h3poteto@pleroma.io</a>
+      </Div>
     </>
   )
 }
