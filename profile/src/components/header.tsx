@@ -38,15 +38,17 @@ const Header = ({ siteTitle }) => (
           About Me
         </Text>
       </Link>
-      <Text
-        tag="h2"
-        textSize="subheader"
-        textColor="gray400"
-        m={{ x: "0.5rem", y: 0 }}
-        textWeight="200"
-      >
-        Career
-      </Text>
+      <Link to="#career" style={{ textDecoration: `none` }}>
+        <Text
+          tag="h2"
+          textSize="subheader"
+          textColor="gray400"
+          m={{ x: "0.5rem", y: 0 }}
+          textWeight="200"
+        >
+          Career
+        </Text>
+      </Link>
       <Text
         tag="h2"
         textSize="subheader"

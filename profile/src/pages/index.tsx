@@ -37,6 +37,70 @@ const IndexPage = () => (
         </Div>
       </Div>
     </Div>
+    <Div textAlign="center" id="career">
+      <Text
+        tag="h3"
+        textSize="display1"
+        textColor="info700"
+        p={{ x: 0, y: "2rem" }}
+      >
+        Career
+      </Text>
+      <Div textAlign="left">
+        <Text tag="h4" textSize="title" textColor="black500">
+          LAPRAS, Inc
+        </Text>
+        <Text textColor="black300">2018/04 ~ now</Text>
+        <ul style={{ marginTop: 12 }}>
+          <li>
+            <Text textSize="paragraph" textColor="black600">
+              Software Engineer
+            </Text>
+          </li>
+          <li>
+            <Text textSize="paragraph" textColor="black600">
+              Crawler Engineer
+            </Text>
+          </li>
+          <li>
+            <Text textSize="paragraph" textColor="black600">
+              Site Reliability Engineer
+            </Text>
+          </li>
+        </ul>
+      </Div>
+      <Div textAlign="left">
+        <Text tag="h4" textSize="title" textColor="black500">
+          CrowdWorks, Inc
+        </Text>
+        <Text textColor="black300">2015/03 ~ 2018/03</Text>
+        <ul style={{ marginTop: 12 }}>
+          <li>
+            <Text textSize="paragraph" textColor="black600">
+              Software Engineer
+            </Text>
+          </li>
+          <li>
+            <Text textSize="paragraph" textColor="black600">
+              Tech Lead
+            </Text>
+          </li>
+        </ul>
+      </Div>
+      <Div textAlign="left">
+        <Text tag="h4" textSize="title" textColor="black500">
+          Interfirm, Inc
+        </Text>
+        <Text textColor="black300">2013/04 ~ 2015/03</Text>
+        <ul style={{ marginTop: 12 }}>
+          <li>
+            <Text textSize="paragraph" textColor="black600">
+              Software Engineer
+            </Text>
+          </li>
+        </ul>
+      </Div>
+    </Div>
   </Layout>
 )
 
