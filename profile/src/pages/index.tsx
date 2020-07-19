@@ -4,6 +4,7 @@ import { Div, Text } from "atomize"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from "../components/image"
+import Slide from "../components/slide"
 
 const IndexPage = () => (
   <Layout>
@@ -99,6 +100,30 @@ const IndexPage = () => (
             </Text>
           </li>
         </ul>
+      </Div>
+    </Div>
+    <Div textAlign="center" id="talks">
+      <Text
+        tag="h3"
+        textSize="display1"
+        textColor="info700"
+        p={{ x: 0, y: "2rem" }}
+      >
+        Talks
+      </Text>
+      <Div d="flex" flexWrap="wrap" justify="space-between">
+        <Div w="40%">
+          <Slide id="aaf3dcc919ba4337a0e55011cf583f86" />
+        </Div>
+        <Div w="40%">
+          <Slide id="3309256c58b243988c7d6c19d0b7a4ec" />
+        </Div>
+        <Div w="40%">
+          <Slide id="8fa4a216b11e4677b151b1678631af44" />
+        </Div>
+        <Div w="40%">
+          <Slide id="05d46634fa2f4b648b909e232bcf0f52" />
+        </Div>
       </Div>
     </Div>
   </Layout>

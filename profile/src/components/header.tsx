@@ -58,15 +58,17 @@ const Header = ({ siteTitle }) => (
       >
         OSS
       </Text>
-      <Text
-        tag="h2"
-        textSize="subheader"
-        textColor="gray400"
-        m={{ x: "0.5rem", y: 0 }}
-        textWeight="200"
-      >
-        Talks
-      </Text>
+      <Link to="#talks" style={{ textDecoration: `none` }}>
+        <Text
+          tag="h2"
+          textSize="subheader"
+          textColor="gray400"
+          m={{ x: "0.5rem", y: 0 }}
+          textWeight="200"
+        >
+          Talks
+        </Text>
+      </Link>
       <Text
         tag="h2"
         textSize="subheader"
