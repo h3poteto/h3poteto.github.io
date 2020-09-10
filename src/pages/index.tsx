@@ -101,9 +101,22 @@ const IndexPage = () => (
       </Text>
       <Div textAlign="left">
         <Text tag="h4" textSize="title" textColor="black500">
+          Z Lab Corporation
+        </Text>
+        <Text textColor="black300">2020/09 ~ now</Text>
+        <ul style={{ marginTop: 12 }}>
+          <li>
+            <Text textSize="paragraph" textColor="black600">
+              Software Engineer
+            </Text>
+          </li>
+        </ul>
+      </Div>
+      <Div textAlign="left">
+        <Text tag="h4" textSize="title" textColor="black500">
           LAPRAS, Inc
         </Text>
-        <Text textColor="black300">2018/04 ~ now</Text>
+        <Text textColor="black300">2018/04 ~ 2020/08</Text>
         <ul style={{ marginTop: 12 }}>
           <li>
             <Text textSize="paragraph" textColor="black600">
