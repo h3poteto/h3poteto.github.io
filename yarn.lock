@@ -5994,10 +5994,10 @@ gatsby-plugin-sharp@^2.6.14:
     svgo "1.3.2"
     uuid "^3.4.0"
 
-gatsby-plugin-styletron@^5.0.9:
-  version "5.0.9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styletron/-/gatsby-plugin-styletron-5.0.9.tgz#b824b798c07f34f84eff5809a8f0fedcbb21677a"
-  integrity sha512-C/uSeOHLYyGjoVWmVdzbdIua3gJmxewq6wfXxApldVRn+D5TPyvlYGJz19h/Yg80RC98jVeUlKrErSJPKXAn0Q==
+gatsby-plugin-styletron@^5.7.0:
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styletron/-/gatsby-plugin-styletron-5.7.0.tgz#621a15819338567c518504f9239f4782b8c0f851"
+  integrity sha512-kdUBRC6ebC5cURbnXhPAjGMt6puhh7s9WB0HhjAzxbgZMWlopqnQVnZX6Ipj2ky3gfsA2BFiLymz7ih3Ga1CIg==
 
 gatsby-plugin-typescript@^2.4.8:
   version "2.4.8"
