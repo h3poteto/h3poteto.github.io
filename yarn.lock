@@ -2320,10 +2320,10 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-atomize@^1.0.26:
-  version "1.0.26"
-  resolved "https://registry.yarnpkg.com/atomize/-/atomize-1.0.26.tgz#17b622844f6a13d1d9edd2f851b062614352ba76"
-  integrity sha512-Aom0WbsvTWSOy9j3N/6jfwOCGT9k1rwehkw6Y1317gl2w99J3tnNfXSrdRu5SqtD3AzM+hdmpbH6Yb0YbXBazA==
+atomize@^1.0.28:
+  version "1.0.28"
+  resolved "https://registry.yarnpkg.com/atomize/-/atomize-1.0.28.tgz#80bd2d03cd4bcb168223747948ed1f92015d9a80"
+  integrity sha512-JSvmWzin/0vRl2KsPo7snb5A1HlyPJK3yEFH8o7RxWsduXIrjdb4Wg2DxzSWRyPDi95YLjuUuWtbftlU/ny9YQ==
 
 auto-bind@^4.0.0:
   version "4.0.0"
