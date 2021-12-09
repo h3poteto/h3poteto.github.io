@@ -193,8 +193,8 @@ const IndexPage = () => (
           </a>
         </Div>
         <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
-          <a href="https://github.com/h3poteto/ecs-goploy">
-            <img src="https://gh-card.dev/repos/h3poteto/ecs-goploy.svg?fullname=" />
+          <a href="https://github.com/h3poteto/ecs-task">
+            <img src="https://gh-card.dev/repos/h3poteto/ecs-task.svg?fullname=" />
           </a>
         </Div>
         <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
@@ -205,6 +205,11 @@ const IndexPage = () => (
         <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
           <a href="https://github.com/h3poteto/electron-mock-ipc">
             <img src="https://gh-card.dev/repos/h3poteto/electron-mock-ipc.svg?fullname=" />
+          </a>
+        </Div>
+        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
+          <a href="https://github.com/h3poteto/ecs-goploy">
+            <img src="https://gh-card.dev/repos/h3poteto/ecs-goploy.svg?fullname=" />
           </a>
         </Div>
       </Div>
