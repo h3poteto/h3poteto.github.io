@@ -20,7 +20,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
-    "react-transition-group": "^4.4.1",
+    "react-transition-group": "^4.4.2",
     "styletron-engine-atomic": "^1.4.6",
     "styletron-react": "^5.2.7",
     "typescript": "^3.9.7"
