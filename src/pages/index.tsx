@@ -101,9 +101,22 @@ const IndexPage = () => (
       </Text>
       <Div textAlign="left">
         <Text tag="h4" textSize="title" textColor="black500">
+          oVice, Inc
+        </Text>
+        <Text textColor="black300">2022/11 ~ now</Text>
+        <ul style={{ marginTop: 12 }}>
+          <li>
+            <Text textSize="paragraph" textColor="black600">
+              Site Reliability Engineer
+            </Text>
+          </li>
+        </ul>
+      </Div>
+      <Div textAlign="left">
+        <Text tag="h4" textSize="title" textColor="black500">
           Z Lab Corporation
         </Text>
-        <Text textColor="black300">2020/09 ~ now</Text>
+        <Text textColor="black300">2020/09 ~ 2022/10</Text>
         <ul style={{ marginTop: 12 }}>
           <li>
             <Text textSize="paragraph" textColor="black600">
@@ -185,6 +198,11 @@ const IndexPage = () => (
         <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
           <a href="https://github.com/h3poteto/megalodon">
             <img src="https://gh-card.dev/repos/h3poteto/megalodon.svg?fullname=" />
+          </a>
+        </Div>
+        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
+          <a href="https://github.com/h3poteto/megalodon-rs">
+            <img src="https://gh-card.dev/repos/h3poteto/megalodon-rs.svg?fullname=" />
           </a>
         </Div>
         <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
@@ -427,6 +445,27 @@ const IndexPage = () => (
             p={{ l: "2rem" }}
           >
             React.js / Vue.js
+          </Text>
+        </Div>
+        <Div
+          d="flex"
+          w={{ xs: "90%", sm: "40%", md: "40%" }}
+          align="center"
+          m={{ y: "1rem" }}
+        >
+          <Div w="100px" textAlign="center">
+            <Img
+              sizes={Image({ filename: "rust.png" })}
+              style={{ width: 80, marginLeft: "auto", marginRight: "auto" }}
+            />
+          </Div>
+          <Text
+            textSize="subheader"
+            textColor="black600"
+            textWeight="600"
+            p={{ l: "2rem" }}
+          >
+            Rust
           </Text>
         </Div>
       </Div>
