@@ -60,19 +60,29 @@ export default function Home() {
                   <p style={{ margin: '1vh 0' }}>I'm a software engineer working in Japan.</p>
                   <FlexboxGrid style={{ margin: '2vh 0' }} align="middle">
                     <FlexboxGrid.Item>
-                      <img src="/images/github.png" alt="github" style={{ height: '42px', margin: '0' }} />
+                      <Button appearance="link" href="https://github.com/h3poteto">
+                        <img src="/images/github.png" alt="github" style={{ height: '42px', margin: '0' }} />
+                      </Button>
                     </FlexboxGrid.Item>
                     <FlexboxGrid.Item>
-                      <img src="/images/pleroma.png" alt="pleroma" style={{ height: '42px', margin: '0 0 0 1vh' }} />
+                      <Button appearance="link" href="https://pleroma.io/users/h3poteto">
+                        <img src="/images/pleroma.png" alt="pleroma" style={{ height: '42px', margin: '0' }} />
+                      </Button>
                     </FlexboxGrid.Item>
                     <FlexboxGrid.Item>
-                      <img src="/images/mastodon.png" alt="mastodon" style={{ height: '42px', margin: '0 0 0 1vh' }} />
+                      <Button appearance="link" href="https://fedibird.com/@h3poteto">
+                        <img src="/images/mastodon.png" alt="mastodon" style={{ height: '42px', margin: '0' }} />
+                      </Button>
                     </FlexboxGrid.Item>
                     <FlexboxGrid.Item>
-                      <img src="/images/twitter.png" alt="twitter" style={{ height: '42px', margin: '0 0 0 1vh' }} />
+                      <Button appearance="link" href="https://twitter.com/h3_poteto">
+                        <img src="/images/twitter.png" alt="twitter" style={{ height: '42px', margin: '0' }} />
+                      </Button>
                     </FlexboxGrid.Item>
                     <FlexboxGrid.Item>
-                      <img src="/images/hatena.png" alt="blog" style={{ height: '62px', margin: '0 0 0 0' }} />
+                      <Button appearance="link" href="https://h3poteto.hatenablog.com/">
+                        <img src="/images/hatena.png" alt="blog" style={{ height: '62px', margin: '0' }} />
+                      </Button>
                     </FlexboxGrid.Item>
                   </FlexboxGrid>
                 </FlexboxGrid.Item>
