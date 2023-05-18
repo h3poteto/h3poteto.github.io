@@ -45,6 +45,7 @@ export default function Home() {
                 <FlexboxGrid.Item>
                   <img
                     src="/images/icon.png"
+                    alt="icon"
                     style={{
                       width: '128px',
                       height: '128px',
@@ -59,19 +60,19 @@ export default function Home() {
                   <p style={{ margin: '1vh 0' }}>I'm a software engineer working in Japan.</p>
                   <FlexboxGrid style={{ margin: '2vh 0' }} align="middle">
                     <FlexboxGrid.Item>
-                      <img src="/images/github.png" style={{ height: '42px', margin: '0' }} />
+                      <img src="/images/github.png" alt="github" style={{ height: '42px', margin: '0' }} />
                     </FlexboxGrid.Item>
                     <FlexboxGrid.Item>
-                      <img src="/images/pleroma.png" style={{ height: '42px', margin: '0 0 0 1vh' }} />
+                      <img src="/images/pleroma.png" alt="pleroma" style={{ height: '42px', margin: '0 0 0 1vh' }} />
                     </FlexboxGrid.Item>
                     <FlexboxGrid.Item>
-                      <img src="/images/mastodon.png" style={{ height: '42px', margin: '0 0 0 1vh' }} />
+                      <img src="/images/mastodon.png" alt="mastodon" style={{ height: '42px', margin: '0 0 0 1vh' }} />
                     </FlexboxGrid.Item>
                     <FlexboxGrid.Item>
-                      <img src="/images/twitter.png" style={{ height: '42px', margin: '0 0 0 1vh' }} />
+                      <img src="/images/twitter.png" alt="twitter" style={{ height: '42px', margin: '0 0 0 1vh' }} />
                     </FlexboxGrid.Item>
                     <FlexboxGrid.Item>
-                      <img src="/images/hatena.png" style={{ height: '62px', margin: '0 0 0 0' }} />
+                      <img src="/images/hatena.png" alt="blog" style={{ height: '62px', margin: '0 0 0 0' }} />
                     </FlexboxGrid.Item>
                   </FlexboxGrid>
                 </FlexboxGrid.Item>
@@ -106,48 +107,48 @@ export default function Home() {
               <FlexboxGrid justify="space-around" style={{ margin: '3vh 0' }}>
                 <FlexboxGrid.Item>
                   <a href="https://github.com/h3poteto/whalebird-desktop">
-                    <img src="https://gh-card.dev/repos/h3poteto/whalebird-desktop.svg?fullname=" />
+                    <img src="https://gh-card.dev/repos/h3poteto/whalebird-desktop.svg?fullname=" alt="whalebird" />
                   </a>
                 </FlexboxGrid.Item>
                 <FlexboxGrid.Item>
                   <a href="https://github.com/h3poteto/fedistar">
-                    <img src="https://gh-card.dev/repos/h3poteto/fedistar.svg?fullname=" />
+                    <img src="https://gh-card.dev/repos/h3poteto/fedistar.svg?fullname=" alt="fedistar" />
                   </a>
                 </FlexboxGrid.Item>
               </FlexboxGrid>
               <FlexboxGrid justify="space-around" style={{ margin: '3vh 0' }}>
                 <FlexboxGrid.Item>
                   <a href="https://github.com/h3poteto/megalodon">
-                    <img src="https://gh-card.dev/repos/h3poteto/megalodon.svg?fullname=" />
+                    <img src="https://gh-card.dev/repos/h3poteto/megalodon.svg?fullname=" alt="megalodon" />
                   </a>
                 </FlexboxGrid.Item>
                 <FlexboxGrid.Item>
                   <a href="https://github.com/h3poteto/megalodon-rs">
-                    <img src="https://gh-card.dev/repos/h3poteto/megalodon-rs.svg?fullname=" />
+                    <img src="https://gh-card.dev/repos/h3poteto/megalodon-rs.svg?fullname=" alt="megalodon-rs" />
                   </a>
                 </FlexboxGrid.Item>
               </FlexboxGrid>
               <FlexboxGrid justify="space-around" style={{ margin: '3vh 0' }}>
                 <FlexboxGrid.Item>
                   <a href="https://github.com/h3poteto/kube-job">
-                    <img src="https://gh-card.dev/repos/h3poteto/kube-job.svg?fullname=" />
+                    <img src="https://gh-card.dev/repos/h3poteto/kube-job.svg?fullname=" alt="kube-job" />
                   </a>
                 </FlexboxGrid.Item>
                 <FlexboxGrid.Item>
                   <a href="https://github.com/h3poteto/ecs-task">
-                    <img src="https://gh-card.dev/repos/h3poteto/ecs-task.svg?fullname=" />
+                    <img src="https://gh-card.dev/repos/h3poteto/ecs-task.svg?fullname=" alt="ecs-task" />
                   </a>
                 </FlexboxGrid.Item>
               </FlexboxGrid>
               <FlexboxGrid justify="space-around" style={{ margin: '3vh 0' }}>
                 <FlexboxGrid.Item>
                   <a href="https://github.com/h3poteto/fluentd-sidecar-injector">
-                    <img src="https://gh-card.dev/repos/h3poteto/fluentd-sidecar-injector.svg?fullname=" />
+                    <img src="https://gh-card.dev/repos/h3poteto/fluentd-sidecar-injector.svg?fullname=" alt="fluentd-sidecar-injector" />
                   </a>
                 </FlexboxGrid.Item>
                 <FlexboxGrid.Item>
                   <a href="https://github.com/h3poteto/electron-mock-ipc">
-                    <img src="https://gh-card.dev/repos/h3poteto/electron-mock-ipc.svg?fullname=" />
+                    <img src="https://gh-card.dev/repos/h3poteto/electron-mock-ipc.svg?fullname=" alt="electron-mock-ipc" />
                   </a>
                 </FlexboxGrid.Item>
               </FlexboxGrid>

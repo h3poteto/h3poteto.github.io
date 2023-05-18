@@ -6,7 +6,7 @@ type Props = {
 const Language: React.FC<Props> = ({ image, name }) => (
   <div style={{ display: 'flex', alignItems: 'center', width: '380px' }}>
     <div>
-      <img src={image} width="60" />
+      <img src={image} width="60" alt={name} />
     </div>
     <div>
       <p
