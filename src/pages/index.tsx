@@ -1,476 +1,238 @@
-import React from "react"
-import { Div, Text, Button } from "atomize"
-import Img from "gatsby-image"
-import { Link } from "gatsby"
+import Head from 'next/head'
+import { Inter } from 'next/font/google'
+import { Timeline, Container, Content, FlexboxGrid, Header, Nav, Navbar, Button, Footer } from 'rsuite'
+import styles from '../styles/Home.module.css'
+import Slide from '@/components/slide'
+import Language from '@/components/language'
+import Career from '@/components/career'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Image from "../components/image"
-import Slide from "../components/slide"
+const inter = Inter({ subsets: ['latin'] })
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="About Me" />
-    <Div textAlign="center" id="about_me">
-      <Text
-        tag="h3"
-        textSize="display1"
-        textColor="info700"
-        p={{ x: 0, y: "2rem" }}
-      >
-        About Me
-      </Text>
-      <Div d="flex" flexWrap="wrap">
-        <Div w="200px" m={{ x: { xs: "auto", sm: 0 }, y: 0 }}>
-          <Img
-            sizes={Image({ filename: "icon.png" })}
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>About Me | h3poteto</title>
+      </Head>
+      <main className={inter.className}>
+        <Container>
+          <Header>
+            <Navbar appearance="inverse" style={{ backgroundColor: 'var(--rs-primary-900)' }}>
+              <Navbar.Brand href="/" style={{ fontWeight: '400', fontSize: '1.2em' }}>
+                h3poteto
+              </Navbar.Brand>
+              <Nav pullRight>
+                <Nav.Item href="/#about">About Me</Nav.Item>
+                <Nav.Item href="/#career">Career</Nav.Item>
+                <Nav.Item href="/#oss">OSS</Nav.Item>
+                <Nav.Item href="/#talks">Talks</Nav.Item>
+                <Nav.Item href="/#skills">Skills</Nav.Item>
+              </Nav>
+            </Navbar>
+          </Header>
+          <Content>
+            <div className={styles.header}>
+              <div className={styles.content}>
+                <h1 style={{ color: '#eef7ff', fontWeight: '400' }}>h3poteto</h1>
+                <h3 style={{ color: '#dceeff', fontWeight: '400' }}>Sofotware Engineer in Japan</h3>
+              </div>
+            </div>
+            <div id="about" className={styles.content} style={{ textAlign: 'center', margin: '4vh auto' }}>
+              <h2 style={{ color: 'var(--rs-primary-600)' }}>About Me</h2>
+            </div>
+            <div className={styles.content}>
+              <FlexboxGrid>
+                <FlexboxGrid.Item>
+                  <img
+                    src="/images/icon.png"
+                    alt="icon"
+                    style={{
+                      width: '128px',
+                      height: '128px',
+                      borderRadius: '50%',
+                      marginRight: '4vh'
+                    }}
+                  />
+                </FlexboxGrid.Item>
+                <FlexboxGrid.Item>
+                  <h4 style={{ color: 'var(--rs-primary-600)' }}>Akira Fukushima</h4>
+                  <h5 style={{ color: 'var(--rs-gray-500)', margin: '1vh 0' }}>@h3poteto</h5>
+                  <p style={{ margin: '1vh 0' }}>I'm a software engineer working in Japan.</p>
+                  <FlexboxGrid style={{ margin: '2vh 0' }} align="middle">
+                    <FlexboxGrid.Item>
+                      <img src="/images/github.png" alt="github" style={{ height: '42px', margin: '0' }} />
+                    </FlexboxGrid.Item>
+                    <FlexboxGrid.Item>
+                      <img src="/images/pleroma.png" alt="pleroma" style={{ height: '42px', margin: '0 0 0 1vh' }} />
+                    </FlexboxGrid.Item>
+                    <FlexboxGrid.Item>
+                      <img src="/images/mastodon.png" alt="mastodon" style={{ height: '42px', margin: '0 0 0 1vh' }} />
+                    </FlexboxGrid.Item>
+                    <FlexboxGrid.Item>
+                      <img src="/images/twitter.png" alt="twitter" style={{ height: '42px', margin: '0 0 0 1vh' }} />
+                    </FlexboxGrid.Item>
+                    <FlexboxGrid.Item>
+                      <img src="/images/hatena.png" alt="blog" style={{ height: '62px', margin: '0 0 0 0' }} />
+                    </FlexboxGrid.Item>
+                  </FlexboxGrid>
+                </FlexboxGrid.Item>
+              </FlexboxGrid>
+            </div>
+            <div id="career" className={styles.content} style={{ textAlign: 'center', margin: '8vh auto' }}>
+              <h2 style={{ color: 'var(--rs-primary-600)' }}>Career</h2>
+            </div>
+            <div className={styles.content}>
+              <Timeline align="left" endless>
+                <Timeline.Item>
+                  <Career start="2013/4" company="Interfirm, Inc" jobs={['Software Engineer']} />
+                </Timeline.Item>
+                <Timeline.Item>
+                  <Career start="2015/3" company="CrowdWorks, Inc" jobs={['Software Engineer', 'Tech Lead']} />
+                </Timeline.Item>
+                <Timeline.Item>
+                  <Career start="2018/4" company="LAPRAS, Inc" jobs={['Site Reliability Engineer', 'Crawler Engineer']} />
+                </Timeline.Item>
+                <Timeline.Item>
+                  <Career start="2020/9" company="Z Lab Corporation" jobs={['Software Engineer']} />
+                </Timeline.Item>
+                <Timeline.Item>
+                  <Career start="2022/11" company="oVice, Inc" jobs={['Site Reliability Engineer']} />
+                </Timeline.Item>
+              </Timeline>
+            </div>
+            <div id="oss" className={styles.content} style={{ textAlign: 'center', margin: '8vh auto' }}>
+              <h2 style={{ color: 'var(--rs-primary-600)' }}>OSS</h2>
+            </div>
+            <div className={styles.content}>
+              <FlexboxGrid justify="space-around" style={{ margin: '3vh 0' }}>
+                <FlexboxGrid.Item>
+                  <a href="https://github.com/h3poteto/whalebird-desktop">
+                    <img src="https://gh-card.dev/repos/h3poteto/whalebird-desktop.svg?fullname=" alt="whalebird" />
+                  </a>
+                </FlexboxGrid.Item>
+                <FlexboxGrid.Item>
+                  <a href="https://github.com/h3poteto/fedistar">
+                    <img src="https://gh-card.dev/repos/h3poteto/fedistar.svg?fullname=" alt="fedistar" />
+                  </a>
+                </FlexboxGrid.Item>
+              </FlexboxGrid>
+              <FlexboxGrid justify="space-around" style={{ margin: '3vh 0' }}>
+                <FlexboxGrid.Item>
+                  <a href="https://github.com/h3poteto/megalodon">
+                    <img src="https://gh-card.dev/repos/h3poteto/megalodon.svg?fullname=" alt="megalodon" />
+                  </a>
+                </FlexboxGrid.Item>
+                <FlexboxGrid.Item>
+                  <a href="https://github.com/h3poteto/megalodon-rs">
+                    <img src="https://gh-card.dev/repos/h3poteto/megalodon-rs.svg?fullname=" alt="megalodon-rs" />
+                  </a>
+                </FlexboxGrid.Item>
+              </FlexboxGrid>
+              <FlexboxGrid justify="space-around" style={{ margin: '3vh 0' }}>
+                <FlexboxGrid.Item>
+                  <a href="https://github.com/h3poteto/kube-job">
+                    <img src="https://gh-card.dev/repos/h3poteto/kube-job.svg?fullname=" alt="kube-job" />
+                  </a>
+                </FlexboxGrid.Item>
+                <FlexboxGrid.Item>
+                  <a href="https://github.com/h3poteto/ecs-task">
+                    <img src="https://gh-card.dev/repos/h3poteto/ecs-task.svg?fullname=" alt="ecs-task" />
+                  </a>
+                </FlexboxGrid.Item>
+              </FlexboxGrid>
+              <FlexboxGrid justify="space-around" style={{ margin: '3vh 0' }}>
+                <FlexboxGrid.Item>
+                  <a href="https://github.com/h3poteto/fluentd-sidecar-injector">
+                    <img src="https://gh-card.dev/repos/h3poteto/fluentd-sidecar-injector.svg?fullname=" alt="fluentd-sidecar-injector" />
+                  </a>
+                </FlexboxGrid.Item>
+                <FlexboxGrid.Item>
+                  <a href="https://github.com/h3poteto/electron-mock-ipc">
+                    <img src="https://gh-card.dev/repos/h3poteto/electron-mock-ipc.svg?fullname=" alt="electron-mock-ipc" />
+                  </a>
+                </FlexboxGrid.Item>
+              </FlexboxGrid>
+              <FlexboxGrid justify="space-around" style={{ margin: '3vh 0' }}>
+                <FlexboxGrid.Item>
+                  <Button href="https://github.com/h3poteto" appearance="primary" size="lg" style={{ padding: '0.6em 4em' }}>
+                    More
+                  </Button>
+                </FlexboxGrid.Item>
+              </FlexboxGrid>
+            </div>
+            <div id="talks" className={styles.content} style={{ textAlign: 'center', margin: '8vh auto' }}>
+              <h2 style={{ color: 'var(--rs-primary-600)' }}>Talks</h2>
+            </div>
+            <div className={styles.content}>
+              <Slide id="aaf3dcc919ba4337a0e55011cf583f86" />
+              <Slide id="3309256c58b243988c7d6c19d0b7a4ec" />
+              <Slide id="8fa4a216b11e4677b151b1678631af44" />
+              <Slide id="05d46634fa2f4b648b909e232bcf0f52" />
+              <FlexboxGrid justify="space-around" style={{ margin: '3vh 0' }}>
+                <FlexboxGrid.Item>
+                  <Button href="https://speakerdeck.com/h3poteto" appearance="primary" size="lg" style={{ padding: '0.6em 4em' }}>
+                    More
+                  </Button>
+                </FlexboxGrid.Item>
+              </FlexboxGrid>
+            </div>
+            <div id="skills" className={styles.content} style={{ textAlign: 'center', margin: '8vh auto' }}>
+              <h2 style={{ color: 'var(--rs-primary-600)' }}>Skills</h2>
+            </div>
+            <div className={styles.content}>
+              <FlexboxGrid justify="space-between" align="middle" style={{ margin: '4vh 0' }}>
+                <FlexboxGrid.Item>
+                  <Language image="/images/golang.png" name="Golang" />
+                </FlexboxGrid.Item>
+                <FlexboxGrid.Item>
+                  <Language image="/images/elixir.png" name="Elixir" />
+                </FlexboxGrid.Item>
+              </FlexboxGrid>
+              <FlexboxGrid justify="space-between" align="middle" style={{ margin: '4vh 0' }}>
+                <FlexboxGrid.Item>
+                  <Language image="/images/ruby.png" name="Ruby" />
+                </FlexboxGrid.Item>
+                <FlexboxGrid.Item>
+                  <Language image="/images/rust.png" name="Rust" />
+                </FlexboxGrid.Item>
+              </FlexboxGrid>
+              <FlexboxGrid justify="space-between" align="middle" style={{ margin: '4vh 0' }}>
+                <FlexboxGrid.Item>
+                  <Language image="/images/typescript.png" name="Typescript / Javascript" />
+                </FlexboxGrid.Item>
+                <FlexboxGrid.Item>
+                  <Language image="/images/python.png" name="Python" />
+                </FlexboxGrid.Item>
+              </FlexboxGrid>
+              <FlexboxGrid justify="space-between" align="middle" style={{ margin: '4vh 0' }}>
+                <FlexboxGrid.Item>
+                  <Language image="/images/swift.svg" name="Swift" />
+                </FlexboxGrid.Item>
+                <FlexboxGrid.Item>
+                  <Language image="/images/react.png" name="React.js / Vue.js" />
+                </FlexboxGrid.Item>
+              </FlexboxGrid>
+              <FlexboxGrid justify="space-between" align="middle" style={{ margin: '4vh 0' }}>
+                <FlexboxGrid.Item>
+                  <Language image="/images/kubernetes.png" name="Kubernetes" />
+                </FlexboxGrid.Item>
+                <FlexboxGrid.Item>
+                  <Language image="/images/terraform.png" name="AWS / Terraform" />
+                </FlexboxGrid.Item>
+              </FlexboxGrid>
+            </div>
+          </Content>
+          <Footer
             style={{
-              width: 120,
-              borderRadius: 60,
-              marginLeft: "auto",
-              marginRight: "auto",
+              backgroundColor: 'var(--rs-gray-100)',
+              padding: '4em 0',
+              textAlign: 'center'
             }}
-          />
-        </Div>
-        <Div m={{ x: { xs: "auto", sm: 0 }, y: 0 }} textAlign="left">
-          <Text
-            tag="h4"
-            textSize="title"
-            p={{ x: 0, t: "0.5rem" }}
-            textColor="info700"
           >
-            Akira Fukushima
-          </Text>
-          <Text tag="h5" textSize="subheader" textColor="gray700">
-            @h3poteto
-          </Text>
-          <Text p={{ t: "0.5rem" }}>Software Engineer working in Tokyo.</Text>
-          <Div m={{ t: "1rem" }} d="flex" align="center">
-            <Div>
-              <Link to="https://github.com/h3poteto">
-                <Img
-                  sizes={Image({ filename: "github.png" })}
-                  style={{ width: 42 }}
-                />
-              </Link>
-            </Div>
-            <Div p={{ l: "12px" }}>
-              <Link to="https://pleroma.io/users/h3poteto">
-                <Img
-                  sizes={Image({ filename: "pleroma.png" })}
-                  style={{ width: 26 }}
-                />
-              </Link>
-            </Div>
-            <Div p={{ l: "12px" }}>
-              <Link to="https://fedibird.com/@h3poteto">
-                <Img
-                  sizes={Image({ filename: "mastodon.png" })}
-                  style={{ width: 42 }}
-                />
-              </Link>
-            </Div>
-            <Div p={{ l: "12px" }}>
-              <Link to="https://twitter.com/h3_poteto">
-                <Img
-                  sizes={Image({ filename: "twitter.png" })}
-                  style={{ width: 42, borderRadius: 24 }}
-                />
-              </Link>
-            </Div>
-            <Div p={{ l: "4px" }}>
-              <Link to="https://h3poteto.hatenablog.com/">
-                <Img
-                  sizes={Image({ filename: "hatena.png" })}
-                  style={{ width: 64 }}
-                />
-              </Link>
-            </Div>
-          </Div>
-        </Div>
-      </Div>
-    </Div>
-    <Div textAlign="center" id="career">
-      <Text
-        tag="h3"
-        textSize="display1"
-        textColor="info700"
-        p={{ x: 0, y: "2rem" }}
-      >
-        Career
-      </Text>
-      <Div textAlign="left">
-        <Text tag="h4" textSize="title" textColor="black500">
-          oVice, Inc
-        </Text>
-        <Text textColor="black300">2022/11 ~ now</Text>
-        <ul style={{ marginTop: 12 }}>
-          <li>
-            <Text textSize="paragraph" textColor="black600">
-              Site Reliability Engineer
-            </Text>
-          </li>
-        </ul>
-      </Div>
-      <Div textAlign="left">
-        <Text tag="h4" textSize="title" textColor="black500">
-          Z Lab Corporation
-        </Text>
-        <Text textColor="black300">2020/09 ~ 2022/10</Text>
-        <ul style={{ marginTop: 12 }}>
-          <li>
-            <Text textSize="paragraph" textColor="black600">
-              Software Engineer
-            </Text>
-          </li>
-        </ul>
-      </Div>
-      <Div textAlign="left">
-        <Text tag="h4" textSize="title" textColor="black500">
-          LAPRAS, Inc
-        </Text>
-        <Text textColor="black300">2018/04 ~ 2020/08</Text>
-        <ul style={{ marginTop: 12 }}>
-          <li>
-            <Text textSize="paragraph" textColor="black600">
-              Software Engineer
-            </Text>
-          </li>
-          <li>
-            <Text textSize="paragraph" textColor="black600">
-              Crawler Engineer
-            </Text>
-          </li>
-          <li>
-            <Text textSize="paragraph" textColor="black600">
-              Site Reliability Engineer
-            </Text>
-          </li>
-        </ul>
-      </Div>
-      <Div textAlign="left">
-        <Text tag="h4" textSize="title" textColor="black500">
-          CrowdWorks, Inc
-        </Text>
-        <Text textColor="black300">2015/03 ~ 2018/03</Text>
-        <ul style={{ marginTop: 12 }}>
-          <li>
-            <Text textSize="paragraph" textColor="black600">
-              Software Engineer
-            </Text>
-          </li>
-          <li>
-            <Text textSize="paragraph" textColor="black600">
-              Tech Lead
-            </Text>
-          </li>
-        </ul>
-      </Div>
-      <Div textAlign="left">
-        <Text tag="h4" textSize="title" textColor="black500">
-          Interfirm, Inc
-        </Text>
-        <Text textColor="black300">2013/04 ~ 2015/03</Text>
-        <ul style={{ marginTop: 12 }}>
-          <li>
-            <Text textSize="paragraph" textColor="black600">
-              Software Engineer
-            </Text>
-          </li>
-        </ul>
-      </Div>
-    </Div>
-    <Div textAlign="center" id="oss">
-      <Text
-        tag="h3"
-        textSize="display1"
-        textColor="info700"
-        p={{ x: 0, y: "2rem" }}
-      >
-        OSS
-      </Text>
-      <Div d="flex" flexWrap="wrap" justify="space-between">
-        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
-          <a href="https://github.com/h3poteto/whalebird-desktop">
-            <img src="https://gh-card.dev/repos/h3poteto/whalebird-desktop.svg?fullname=" />
-          </a>
-        </Div>
-        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
-          <a href="https://github.com/h3poteto/megalodon">
-            <img src="https://gh-card.dev/repos/h3poteto/megalodon.svg?fullname=" />
-          </a>
-        </Div>
-        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
-          <a href="https://github.com/h3poteto/megalodon-rs">
-            <img src="https://gh-card.dev/repos/h3poteto/megalodon-rs.svg?fullname=" />
-          </a>
-        </Div>
-        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
-          <a href="https://github.com/h3poteto/kube-job">
-            <img src="https://gh-card.dev/repos/h3poteto/kube-job.svg?fullname=" />
-          </a>
-        </Div>
-        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
-          <a href="https://github.com/h3poteto/ecs-task">
-            <img src="https://gh-card.dev/repos/h3poteto/ecs-task.svg?fullname=" />
-          </a>
-        </Div>
-        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
-          <a href="https://github.com/h3poteto/fluentd-sidecar-injector">
-            <img src="https://gh-card.dev/repos/h3poteto/fluentd-sidecar-injector.svg?fullname=" />
-          </a>
-        </Div>
-        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
-          <a href="https://github.com/h3poteto/electron-mock-ipc">
-            <img src="https://gh-card.dev/repos/h3poteto/electron-mock-ipc.svg?fullname=" />
-          </a>
-        </Div>
-        <Div w={{ xs: "100%", sm: "45%", md: "45%" }}>
-          <a href="https://github.com/h3poteto/ecs-goploy">
-            <img src="https://gh-card.dev/repos/h3poteto/ecs-goploy.svg?fullname=" />
-          </a>
-        </Div>
-      </Div>
-      <Link to="https://github.com/h3poteto">
-        <Button
-          h="2.5rem"
-          p={{ x: "4rem" }}
-          textSize="subheader"
-          textColor="gray200"
-          hoverTextColor="gray100"
-          bg="info800"
-          hoverBg="info900"
-          m={{ x: "auto", y: 0 }}
-        >
-          More
-        </Button>
-      </Link>
-    </Div>
-    <Div textAlign="center" id="talks" m={{ t: "3rem" }}>
-      <Text
-        tag="h3"
-        textSize="display1"
-        textColor="info700"
-        p={{ x: 0, y: "2rem" }}
-      >
-        Talks
-      </Text>
-      <Div>
-        <Div w="80%" m={{ x: "auto", y: 0 }}>
-          <Slide id="aaf3dcc919ba4337a0e55011cf583f86" />
-        </Div>
-        <Div w="80%" m={{ x: "auto", y: 0 }}>
-          <Slide id="3309256c58b243988c7d6c19d0b7a4ec" />
-        </Div>
-        <Div w="80%" m={{ x: "auto", y: 0 }}>
-          <Slide id="8fa4a216b11e4677b151b1678631af44" />
-        </Div>
-        <Div w="80%" m={{ x: "auto", y: 0 }}>
-          <Slide id="05d46634fa2f4b648b909e232bcf0f52" />
-        </Div>
-      </Div>
-      <Link to="https://speakerdeck.com/h3poteto">
-        <Button
-          h="2.5rem"
-          p={{ x: "4rem" }}
-          textSize="subheader"
-          textColor="gray200"
-          hoverTextColor="gray100"
-          bg="info800"
-          hoverBg="info900"
-          m={{ x: "auto", y: 0 }}
-        >
-          More
-        </Button>
-      </Link>
-    </Div>
-    <Div textAlign="center" id="skills" m={{ t: "3rem" }}>
-      <Text
-        tag="h3"
-        textSize="display1"
-        textColor="info700"
-        p={{ x: 0, y: "2rem" }}
-      >
-        Skills
-      </Text>
-      <Div
-        textAlign="left"
-        d="flex"
-        flexWrap="wrap"
-        justify="space-between"
-        align="center"
-      >
-        <Div
-          d="flex"
-          w={{ xs: "90%", sm: "40%", md: "40%" }}
-          align="center"
-          m={{ y: "1rem" }}
-        >
-          <Div w="100px" textAlign="center">
-            <Img
-              sizes={Image({ filename: "golang.png" })}
-              style={{ width: 90, marginLeft: "auto", marginRight: "auto" }}
-            />
-          </Div>
-          <Text
-            textSize="subheader"
-            textColor="black600"
-            textWeight="600"
-            p={{ l: "2rem" }}
-          >
-            Golang
-          </Text>
-        </Div>
-        <Div
-          d="flex"
-          w={{ xs: "90%", sm: "40%", md: "40%" }}
-          align="center"
-          m={{ y: "1rem" }}
-        >
-          <Div w="100px" textAlign="center">
-            <Img
-              sizes={Image({ filename: "ruby.png" })}
-              style={{ width: 50, marginLeft: "auto", marginRight: "auto" }}
-            />
-          </Div>
-          <Text
-            textSize="subheader"
-            textColor="black600"
-            textWeight="600"
-            p={{ l: "2rem" }}
-          >
-            Ruby / Rails
-          </Text>
-        </Div>
-        <Div
-          d="flex"
-          w={{ xs: "90%", sm: "40%", md: "40%" }}
-          align="center"
-          m={{ y: "1rem" }}
-        >
-          <Div w="100px" textAlign="center">
-            <Img
-              sizes={Image({ filename: "elixir.png" })}
-              style={{ width: 60, marginLeft: "auto", marginRight: "auto" }}
-            />
-          </Div>
-          <Text
-            textSize="subheader"
-            textColor="black600"
-            textWeight="600"
-            p={{ l: "2rem" }}
-          >
-            Elixir / Phoenix
-          </Text>
-        </Div>
-        <Div
-          d="flex"
-          w={{ xs: "90%", sm: "40%", md: "40%" }}
-          align="center"
-          m={{ y: "1rem" }}
-        >
-          <Div w="100px" textAlign="center">
-            <Img
-              sizes={Image({ filename: "python.png" })}
-              style={{ width: 50, marginLeft: "auto", marginRight: "auto" }}
-            />
-          </Div>
-          <Text
-            textSize="subheader"
-            textColor="black600"
-            textWeight="600"
-            p={{ l: "2rem" }}
-          >
-            Python / Django
-          </Text>
-        </Div>
-        <Div
-          d="flex"
-          w={{ xs: "90%", sm: "40%", md: "40%" }}
-          align="center"
-          m={{ y: "1rem" }}
-        >
-          <Div w="100px" textAlign="center">
-            <Img
-              sizes={Image({ filename: "terraform.png" })}
-              style={{ width: 60, marginLeft: "auto", marginRight: "auto" }}
-            />
-          </Div>
-          <Text
-            textSize="subheader"
-            textColor="black600"
-            textWeight="600"
-            p={{ l: "2rem" }}
-          >
-            AWS / terraform
-          </Text>
-        </Div>
-        <Div
-          d="flex"
-          w={{ xs: "90%", sm: "40%", md: "40%" }}
-          align="center"
-          m={{ y: "1rem" }}
-        >
-          <Div w="100px" textAlign="center">
-            <Img
-              sizes={Image({ filename: "kubernetes.png" })}
-              style={{ width: 50, marginLeft: "auto", marginRight: "auto" }}
-            />
-          </Div>
-          <Text
-            textSize="subheader"
-            textColor="black600"
-            textWeight="600"
-            p={{ l: "2rem" }}
-          >
-            Kubernetes
-          </Text>
-        </Div>
-        <Div
-          d="flex"
-          w={{ xs: "90%", sm: "40%", md: "40%" }}
-          align="center"
-          m={{ y: "1rem" }}
-        >
-          <Div w="100px" textAlign="center">
-            <Img
-              sizes={Image({ filename: "react.png" })}
-              style={{ width: 80, marginLeft: "auto", marginRight: "auto" }}
-            />
-          </Div>
-          <Text
-            textSize="subheader"
-            textColor="black600"
-            textWeight="600"
-            p={{ l: "2rem" }}
-          >
-            React.js / Vue.js
-          </Text>
-        </Div>
-        <Div
-          d="flex"
-          w={{ xs: "90%", sm: "40%", md: "40%" }}
-          align="center"
-          m={{ y: "1rem" }}
-        >
-          <Div w="100px" textAlign="center">
-            <Img
-              sizes={Image({ filename: "rust.png" })}
-              style={{ width: 80, marginLeft: "auto", marginRight: "auto" }}
-            />
-          </Div>
-          <Text
-            textSize="subheader"
-            textColor="black600"
-            textWeight="600"
-            p={{ l: "2rem" }}
-          >
-            Rust
-          </Text>
-        </Div>
-      </Div>
-    </Div>
-  </Layout>
-)
-
-export default IndexPage
+            &copy; 2023 <a href="https://pleroma.io/users/h3poteto">@h3poteto@pleroma.io</a>
+          </Footer>
+        </Container>
+      </main>
+    </>
+  )
+}

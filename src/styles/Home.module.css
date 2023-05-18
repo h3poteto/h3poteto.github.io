@@ -1,0 +1,13 @@
+.header {
+  background-image: url("/images/89.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 14vh 0;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
