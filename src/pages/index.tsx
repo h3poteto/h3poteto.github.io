@@ -145,8 +145,11 @@ export default function Home() {
                   </a>
                 </FlexboxGrid.Item>
                 <FlexboxGrid.Item>
-                  <a href="https://github.com/h3poteto/ecs-task">
-                    <img src="https://gh-card.dev/repos/h3poteto/ecs-task.svg?fullname=" alt="ecs-task" />
+                  <a href="https://github.com/h3poteto/aws-global-accelerator-controller">
+                    <img
+                      src="https://gh-card.dev/repos/h3poteto/aws-global-accelerator-controller.svg?fullname="
+                      alt="aws-global-accelerator-controller"
+                    />
                   </a>
                 </FlexboxGrid.Item>
               </FlexboxGrid>
