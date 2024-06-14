@@ -7,14 +7,7 @@
   resolved "https://registry.yarnpkg.com/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz#bd9154aec9983f77b3a034ecaa015c2e4201f6cf"
   integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.20.0", "@babel/runtime@^7.20.1", "@babel/runtime@^7.21.0":
-  version "7.24.6"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.24.6.tgz#5b76eb89ad45e2e4a0a8db54c456251469a3358e"
-  integrity sha512-Ja18XcETdEl5mzzACGd+DKgaGJzPTCow7EglgwTmHdwokzDFYh/MHua6lU6DV/hjF2IaOJ4oX2nqnjG7RElKOw==
-  dependencies:
-    regenerator-runtime "^0.14.0"
-
-"@babel/runtime@^7.23.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.20.0", "@babel/runtime@^7.20.1", "@babel/runtime@^7.21.0", "@babel/runtime@^7.23.2":
   version "7.24.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.24.7.tgz#f4f0d5530e8dbdf59b3451b9b3e594b6ba082e12"
   integrity sha512-UwgBRMjJP+xv857DCngvqXI3Iq6J4v0wXmwc6sapg+zyhbwmQX67LUEFrkK5tbyJ30jGuG3ZvWpBiB9LCy1kWw==
@@ -228,9 +221,9 @@
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
 "@types/lodash@^4.14.184":
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.17.4.tgz#0303b64958ee070059e3a7184048a55159fe20b7"
-  integrity sha512-wYCP26ZLxaT3R39kiN2+HcJ4kTd3U1waI/cY7ivWYqFP6pW3ZNpvi6Wd6PHZx7T/t8z0vlkXMg3QYLa7DZ/IJQ==
+  version "4.17.5"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.17.5.tgz#e6c29b58e66995d57cd170ce3e2a61926d55ee04"
+  integrity sha512-MBIOHVZqVqgfro1euRDWX7OO0fBVUUMrN6Pwm8LQsz8cWhEpihlvR70ENj3f40j58TNxZaWv2ndSkInykNBBJw==
 
 "@types/node@20.14.2":
   version "20.14.2"
@@ -2500,10 +2493,10 @@ reusify@^1.0.4:
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
-rsuite-table@^5.18.2:
-  version "5.18.2"
-  resolved "https://registry.yarnpkg.com/rsuite-table/-/rsuite-table-5.18.2.tgz#05d3b9bae3b094cb34620585f6118ec1532915b3"
-  integrity sha512-IelmlHraExYgrkT13WWVENhCywWjBxPkpF2zpsqvMcwzaNAg9lHaVVyajcOKczqGB24NGRE6WgBF5n1RC6XAww==
+rsuite-table@^5.18.3:
+  version "5.18.3"
+  resolved "https://registry.yarnpkg.com/rsuite-table/-/rsuite-table-5.18.3.tgz#08d3a6cd4cd979b1100e015a2f5dec4d37bfbfd1"
+  integrity sha512-Rua79XndYY+UdCUpBuH1Ew5qa54y6zLZ0RNRnudKgamksrV1j+rUhcCsA03a5ZY+b8DXTwct4V/Q6K9q/cJT5w==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@juggle/resize-observer" "^3.3.1"
@@ -2513,10 +2506,10 @@ rsuite-table@^5.18.2:
     lodash "^4.17.21"
     react-is "^17.0.2"
 
-rsuite@^5.33.0:
-  version "5.64.0"
-  resolved "https://registry.yarnpkg.com/rsuite/-/rsuite-5.64.0.tgz#072a879956e4fc8a5f9fbe5c94e06cff05e9c170"
-  integrity sha512-yknbgzUOkb66dX3fFxTnQSlonW1D53fQgY6V4g1Iu8kBNH7tduPaZghLcQ65DAGBa2pGvtrkCZUrLaied1NMBw==
+rsuite@^5.33.0, rsuite@^5.64.0:
+  version "5.64.1"
+  resolved "https://registry.yarnpkg.com/rsuite/-/rsuite-5.64.1.tgz#6dd3c338e3cfc779ce8650663353452ec95a5d37"
+  integrity sha512-Qr4JZRuHPXwod5AWyO6NmvmRUO7HbYPPCSjhA6oAGoVF5GprxeMUwQWa/RAfpGt3px3Bd1EDUwpo0ypWKJA+sA==
   dependencies:
     "@babel/runtime" "^7.20.1"
     "@juggle/resize-observer" "^3.4.0"
@@ -2532,7 +2525,8 @@ rsuite@^5.33.0:
     prop-types "^15.8.1"
     react-use-set "^1.0.0"
     react-window "^1.8.8"
-    rsuite-table "^5.18.2"
+    rsuite "^5.64.0"
+    rsuite-table "^5.18.3"
     schema-typed "^2.2.2"
 
 run-applescript@^5.0.0:
