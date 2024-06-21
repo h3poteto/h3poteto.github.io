@@ -2506,10 +2506,10 @@ rsuite-table@^5.18.3:
     lodash "^4.17.21"
     react-is "^17.0.2"
 
-rsuite@^5.33.0, rsuite@^5.64.0:
-  version "5.64.1"
-  resolved "https://registry.yarnpkg.com/rsuite/-/rsuite-5.64.1.tgz#6dd3c338e3cfc779ce8650663353452ec95a5d37"
-  integrity sha512-Qr4JZRuHPXwod5AWyO6NmvmRUO7HbYPPCSjhA6oAGoVF5GprxeMUwQWa/RAfpGt3px3Bd1EDUwpo0ypWKJA+sA==
+rsuite@^5.33.0:
+  version "5.64.2"
+  resolved "https://registry.yarnpkg.com/rsuite/-/rsuite-5.64.2.tgz#1b6bd0cc823e9bea8817504ae0063e380b5e5d00"
+  integrity sha512-ztFiwVD5r1aDHPrlsR4FPfo0lfIFk/G72Y4Iy2dokp9G1Le9VQ6xLlP4EBK+h/Cgk7u8FqBGU8Zybr81ftitiQ==
   dependencies:
     "@babel/runtime" "^7.20.1"
     "@juggle/resize-observer" "^3.4.0"
@@ -2525,7 +2525,6 @@ rsuite@^5.33.0, rsuite@^5.64.0:
     prop-types "^15.8.1"
     react-use-set "^1.0.0"
     react-window "^1.8.8"
-    rsuite "^5.64.0"
     rsuite-table "^5.18.3"
     schema-typed "^2.2.2"
 
