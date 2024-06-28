@@ -210,20 +210,15 @@
   dependencies:
     tslib "^2.4.0"
 
-"@types/chai@^4.3.3":
-  version "4.3.16"
-  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.3.16.tgz#b1572967f0b8b60bf3f87fe1d854a5604ea70c82"
-  integrity sha512-PatH4iOdyh3MyWtmHVFXLWCCIhUbopaltqddG9BzB+gMIzee2MJrvd+jouii9Z3wzQJruGWAm7WOMjgfG8hQlQ==
-
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
 "@types/lodash@^4.14.184":
-  version "4.17.5"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.17.5.tgz#e6c29b58e66995d57cd170ce3e2a61926d55ee04"
-  integrity sha512-MBIOHVZqVqgfro1euRDWX7OO0fBVUUMrN6Pwm8LQsz8cWhEpihlvR70ENj3f40j58TNxZaWv2ndSkInykNBBJw==
+  version "4.17.6"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.17.6.tgz#193ced6a40c8006cfc1ca3f4553444fb38f0e543"
+  integrity sha512-OpXEVoCKSS3lQqjx9GGGOapBeuW5eUboYHRlHP9urXPX25IKZ6AnP5ZRxtVf63iieUbsHxLn8NQ5Nlftc6yzAA==
 
 "@types/node@20.14.9":
   version "20.14.9"
@@ -2507,14 +2502,13 @@ rsuite-table@^5.18.3:
     react-is "^17.0.2"
 
 rsuite@^5.33.0:
-  version "5.64.2"
-  resolved "https://registry.yarnpkg.com/rsuite/-/rsuite-5.64.2.tgz#1b6bd0cc823e9bea8817504ae0063e380b5e5d00"
-  integrity sha512-ztFiwVD5r1aDHPrlsR4FPfo0lfIFk/G72Y4Iy2dokp9G1Le9VQ6xLlP4EBK+h/Cgk7u8FqBGU8Zybr81ftitiQ==
+  version "5.65.0"
+  resolved "https://registry.yarnpkg.com/rsuite/-/rsuite-5.65.0.tgz#49af2a7d5508c314324b2af6c4d5a3108e6de067"
+  integrity sha512-0cVNTVtyE1Cg9qoSoTk92wKlFs2fkrSjaV90zmmaOR3Jk08UlS8QNkiV4XZb3xBqI+ZSQbNDrcOjys0rlB56RQ==
   dependencies:
     "@babel/runtime" "^7.20.1"
     "@juggle/resize-observer" "^3.4.0"
     "@rsuite/icons" "^1.0.2"
-    "@types/chai" "^4.3.3"
     "@types/lodash" "^4.14.184"
     "@types/prop-types" "^15.7.5"
     "@types/react-window" "^1.8.5"
