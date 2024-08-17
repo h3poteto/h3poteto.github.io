@@ -167,6 +167,21 @@ export default function Home() {
               </FlexboxGrid>
               <FlexboxGrid justify="space-around" style={{ margin: '3vh 0' }}>
                 <FlexboxGrid.Item>
+                  <a href="https://github.com/h3poteto/ecs-task">
+                    <img src="https://gh-card.dev/repos/h3poteto/ecs-task.svg?fullname=" alt="ecs-task" />
+                  </a>
+                </FlexboxGrid.Item>
+                <FlexboxGrid.Item>
+                  <a href="https://github.com/h3poteto/opentelemetry_phoenixchannel">
+                    <img
+                      src="https://gh-card.dev/repos/h3poteto/opentelemetry_phoenixchannel.svg?fullname="
+                      alt="opentelemetry_phoenixchannel"
+                    />
+                  </a>
+                </FlexboxGrid.Item>
+              </FlexboxGrid>
+              <FlexboxGrid justify="space-around" style={{ margin: '3vh 0' }}>
+                <FlexboxGrid.Item>
                   <Button href="https://github.com/h3poteto" appearance="primary" size="lg" style={{ padding: '0.6em 4em' }}>
                     More
                   </Button>
