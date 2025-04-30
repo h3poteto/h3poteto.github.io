@@ -172,11 +172,8 @@ export default function Home() {
                   </a>
                 </FlexboxGrid.Item>
                 <FlexboxGrid.Item>
-                  <a href="https://github.com/h3poteto/opentelemetry_phoenixchannel">
-                    <img
-                      src="https://gh-card.dev/repos/h3poteto/opentelemetry_phoenixchannel.svg?fullname="
-                      alt="opentelemetry_phoenixchannel"
-                    />
+                  <a href="https://github.com/h3poteto/rheomesh">
+                    <img src="https://gh-card.dev/repos/h3poteto/rheomesh.svg?fullname=" alt="rheomesh" />
                   </a>
                 </FlexboxGrid.Item>
               </FlexboxGrid>
