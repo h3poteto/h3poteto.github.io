@@ -4083,8 +4083,8 @@ __metadata:
   linkType: hard
 
 "rsuite@npm:^5.33.0":
-  version: 5.80.3
-  resolution: "rsuite@npm:5.80.3"
+  version: 5.82.0
+  resolution: "rsuite@npm:5.82.0"
   dependencies:
     "@babel/runtime": "npm:^7.20.1"
     "@juggle/resize-observer": "npm:^3.4.0"
@@ -4104,7 +4104,7 @@ __metadata:
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 10/51a9b760c534d8a0387010c540beb9dcf67afbef0f79c8f0ba0494ace0db2b6019f026789f4d45691e937e5910d9ff7924a15326e80d788dab9c96e43516b3b6
+  checksum: 10/eb2b9b4c5cb746e0d06a5e8dd5dba9b599036ebc08432d3b7a67f9333fbcecd66c797b780a7674c95f73e1b268604cb6b78b892fe4ddb5ce6485e8a57de97eb1
   languageName: node
   linkType: hard
 
