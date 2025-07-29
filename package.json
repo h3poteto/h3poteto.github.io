@@ -15,8 +15,8 @@
     "eslint": "9.25.1",
     "eslint-config-next": "15.3.5",
     "next": "15.3.5",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
     "rsuite": "^5.33.0",
     "typescript": "5.8.3"
   },
