@@ -564,12 +564,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.15.34":
-  version: 22.15.34
-  resolution: "@types/node@npm:22.15.34"
+"@types/node@npm:22.18.8":
+  version: 22.18.8
+  resolution: "@types/node@npm:22.18.8"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10/b0fb6674f6c17e3d515531d7f787ccd6676641ba161a6a0e6a93a2d5bc2089fde492eac24b5152a11413bf07a818055a9ec9077d3200b03cf7ea9718470a8417
+  checksum: 10/dc8e883680993bebf45ac641af6648fd88a8d6ec0e375ff737221eef6c93b6a4d20311dfc070bb595095adbf9a2a411a9b3d9230a763eb744bb1d8ca831c331c
   languageName: node
   linkType: hard
 
@@ -2523,7 +2523,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "h3poteto.github.io@workspace:."
   dependencies:
-    "@types/node": "npm:22.15.34"
+    "@types/node": "npm:22.18.8"
     "@types/react": "npm:19.1.16"
     "@types/react-dom": "npm:19.1.9"
     eslint: "npm:9.25.1"
