@@ -12,7 +12,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.20.1, @babel/runtime@npm:^7.21.0":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.20.1, @babel/runtime@npm:^7.21.0":
   version: 7.25.0
   resolution: "@babel/runtime@npm:7.25.0"
   dependencies:
@@ -463,33 +463,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rsuite/icon-font@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@rsuite/icon-font@npm:4.0.0"
-  checksum: 10/0860131ebf335c1345c75a5c11efb94393fd2b1b4956384938d322b6224586110b0f288a27d06a131c4c7098174782b915dd894909a9d81a959cf8c3cd3c3c97
-  languageName: node
-  linkType: hard
-
 "@rsuite/icon-font@npm:^4.1.0":
   version: 4.1.0
   resolution: "@rsuite/icon-font@npm:4.1.0"
   checksum: 10/842a7b022b13cf1b40500ddd2014dca10ed779c7d75a9170af2cd0dcc9bcb6a5593561fdd3a81870fe0290c3a5d82ef3983a85a9333d746eba66a025f04d6db4
-  languageName: node
-  linkType: hard
-
-"@rsuite/icons@npm:^1.0.0":
-  version: 1.0.3
-  resolution: "@rsuite/icons@npm:1.0.3"
-  dependencies:
-    "@babel/runtime": "npm:^7.12.1"
-    "@rsuite/icon-font": "npm:^4.0.0"
-    classnames: "npm:^2.2.5"
-    insert-css: "npm:^2.0.0"
-    lodash: "npm:^4.17.20"
-  peerDependencies:
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: 10/45850a086e24fa671d7f7f6c5751dbaefda1eca627ef38dc54393e7f93b766fa5afac284aac945dc5ff710773f93757ead7555d659e2ec8a411eced53e2911d5
   languageName: node
   linkType: hard
 
@@ -2686,13 +2663,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"insert-css@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "insert-css@npm:2.0.0"
-  checksum: 10/05d6a0a9cbdf554cc7f9ab6aa5c856a82a489b6890a415e5277d58d573af1fb1341c8568beef5192fba6e63dc2b113f70997fc1f0ed97f5ef3a6a45b1207b936
-  languageName: node
-  linkType: hard
-
 "internal-slot@npm:^1.0.5":
   version: 1.0.5
   resolution: "internal-slot@npm:1.0.5"
@@ -3330,7 +3300,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.20, lodash@npm:^4.17.21":
+"lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: 10/c08619c038846ea6ac754abd6dd29d2568aa705feb69339e836dfa8d8b09abbb2f859371e86863eda41848221f9af43714491467b5b0299122431e202bb0c532
@@ -3875,13 +3845,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^17.0.2":
-  version: 17.0.2
-  resolution: "react-is@npm:17.0.2"
-  checksum: 10/73b36281e58eeb27c9cc6031301b6ae19ecdc9f18ae2d518bdb39b0ac564e65c5779405d623f1df9abf378a13858b79442480244bd579968afc1faf9a2ce5e05
-  languageName: node
-  linkType: hard
-
 "react-use-set@npm:^1.0.0":
   version: 1.0.0
   resolution: "react-use-set@npm:1.0.0"
@@ -4063,28 +4026,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rsuite-table@npm:^5.19.1":
-  version: 5.19.1
-  resolution: "rsuite-table@npm:5.19.1"
+"rsuite-table@npm:^5.19.2":
+  version: 5.19.2
+  resolution: "rsuite-table@npm:5.19.2"
   dependencies:
     "@babel/runtime": "npm:^7.12.5"
     "@juggle/resize-observer": "npm:^3.3.1"
-    "@rsuite/icons": "npm:^1.0.0"
     classnames: "npm:^2.3.1"
     dom-lib: "npm:^3.3.1"
     lodash: "npm:^4.17.21"
-    react-is: "npm:^17.0.2"
   peerDependencies:
-    prop-types: ^15.7.2
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 10/7a8ff25087af1c634e8d712262a13d29feff9ad6da2124e73b206fe82f01c76d9b29f58652c691deb09385c6b94d2128c75a4881e5b1387fe5d4a10ed587507e
+  checksum: 10/59487229789f76870d2ee4b5b4a53f162849bee85bb7922efc5f422d32850672441ec3f3646eb0e514f18e960134d63765793d31fc05051a6863fe08318cd181
   languageName: node
   linkType: hard
 
 "rsuite@npm:^5.33.0":
-  version: 5.80.3
-  resolution: "rsuite@npm:5.80.3"
+  version: 5.83.4
+  resolution: "rsuite@npm:5.83.4"
   dependencies:
     "@babel/runtime": "npm:^7.20.1"
     "@juggle/resize-observer": "npm:^3.4.0"
@@ -4099,12 +4059,12 @@ __metadata:
     prop-types: "npm:^15.8.1"
     react-use-set: "npm:^1.0.0"
     react-window: "npm:^1.8.8"
-    rsuite-table: "npm:^5.19.1"
+    rsuite-table: "npm:^5.19.2"
     schema-typed: "npm:^2.4.2"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 10/51a9b760c534d8a0387010c540beb9dcf67afbef0f79c8f0ba0494ace0db2b6019f026789f4d45691e937e5910d9ff7924a15326e80d788dab9c96e43516b3b6
+  checksum: 10/a4389f383c96f99df85d5986e82d4a0169e26e4614f34bb60d4d17f93d4df87c69c5d7328e2f060d914d8b462a298388f055e340299f902a92abf74234acdc45
   languageName: node
   linkType: hard
 
