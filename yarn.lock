@@ -357,12 +357,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:15.3.5":
-  version: 15.3.5
-  resolution: "@next/eslint-plugin-next@npm:15.3.5"
+"@next/eslint-plugin-next@npm:15.5.9":
+  version: 15.5.9
+  resolution: "@next/eslint-plugin-next@npm:15.5.9"
   dependencies:
     fast-glob: "npm:3.3.1"
-  checksum: 10/6c4f852481925f30f2e771277c479ebe832a962171dbb8c1f4f5f32aa203ce9394adcbe10191644adbe115aa9de3ee7cb4dbe5464325c93713813668f76931f7
+  checksum: 10/63ab34b65e4ffc707fefba8a5fc3b46b37bac6ed2a2d2a682bec72448998ee0d6390c3007dac9714ea1020380ba4cf2328d11496ec0adf55df141eb8fe267133
   languageName: node
   linkType: hard
 
@@ -1787,11 +1787,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:15.3.5":
-  version: 15.3.5
-  resolution: "eslint-config-next@npm:15.3.5"
+"eslint-config-next@npm:15.5.9":
+  version: 15.5.9
+  resolution: "eslint-config-next@npm:15.5.9"
   dependencies:
-    "@next/eslint-plugin-next": "npm:15.3.5"
+    "@next/eslint-plugin-next": "npm:15.5.9"
     "@rushstack/eslint-patch": "npm:^1.10.3"
     "@typescript-eslint/eslint-plugin": "npm:^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0"
     "@typescript-eslint/parser": "npm:^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0"
@@ -1807,7 +1807,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/47ef122e09e537f2dbba92a6a582619eba07410d328b49c25f504a4f968bf7ce93c6bc16a3644aa773cec7e87b71d4e8da0026ceba18c9e2943e5db4119ad0e4
+  checksum: 10/c56015602d1d4c044e7486924a7bdfb72e04515aff22c97ec0f0c6ddeed8c3474001a9a4258d90c89d2627eae14d0d769382d3a47f65910c4360a2de0c9b9b8e
   languageName: node
   linkType: hard
 
@@ -2527,7 +2527,7 @@ __metadata:
     "@types/react": "npm:19.1.16"
     "@types/react-dom": "npm:19.1.9"
     eslint: "npm:9.25.1"
-    eslint-config-next: "npm:15.3.5"
+    eslint-config-next: "npm:15.5.9"
     next: "npm:15.3.8"
     react: "npm:19.1.1"
     react-dom: "npm:19.1.1"
