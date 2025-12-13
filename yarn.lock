@@ -350,10 +350,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:15.3.7":
-  version: 15.3.7
-  resolution: "@next/env@npm:15.3.7"
-  checksum: 10/0986e5340ee15b78b71f6ee6a5fe09013c2daf0223632ef2bca719b10d5634c3e3ff3723dfbf317b403c2e01cbf3997b114d9634fed8aacc76668a4ef617e35b
+"@next/env@npm:15.3.8":
+  version: 15.3.8
+  resolution: "@next/env@npm:15.3.8"
+  checksum: 10/5ee562a915431e54701a380df28338452d7143859d4de8d035ab3baf3216afa9a36ef87a01b73b2e1106ac9ecb3be924fdc1f1ab28c0a9dcc89fd8fd0bfee939
   languageName: node
   linkType: hard
 
@@ -2528,7 +2528,7 @@ __metadata:
     "@types/react-dom": "npm:19.1.9"
     eslint: "npm:9.25.1"
     eslint-config-next: "npm:15.3.5"
-    next: "npm:15.3.7"
+    next: "npm:15.3.8"
     react: "npm:19.1.1"
     react-dom: "npm:19.1.1"
     rsuite: "npm:^5.33.0"
@@ -3455,11 +3455,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:15.3.7":
-  version: 15.3.7
-  resolution: "next@npm:15.3.7"
+"next@npm:15.3.8":
+  version: 15.3.8
+  resolution: "next@npm:15.3.8"
   dependencies:
-    "@next/env": "npm:15.3.7"
+    "@next/env": "npm:15.3.8"
     "@next/swc-darwin-arm64": "npm:15.3.5"
     "@next/swc-darwin-x64": "npm:15.3.5"
     "@next/swc-linux-arm64-gnu": "npm:15.3.5"
@@ -3512,7 +3512,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: 10/abeecdc4dd552079828af999bcb359b3b5beadabcd07a1c96c76490d96c0e84a6962203ff8e3173d5a194e101d8ccf4296c01724430828b1f29b2aa5bae2d5ff
+  checksum: 10/2a6260d49e3764fb7dfe3dd0715cff8424b0feec537de1105b3edead297ad8772fd0c53165177b2929ceb3189f2bb789222b2f9f5f7a8a9c28bc79cddb263c28
   languageName: node
   linkType: hard
 
